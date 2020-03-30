@@ -1,11 +1,11 @@
-## Set you libpaths as required
+## Set your libpaths as required
 
 library(broom)
 library(openxlsx)
 # Here we use 'tidy' instead of 'lm' as the output is easier to manipulate
 # change 'lm1' to be the name of your model
 trimmed = tidy(lm1)[,-c(3:5)]
-data.frame(trimmed)
+trimmed<-data.frame(trimmed)
 # create an empty list for loop outputted df to go into
 output <- list()
 # 'selected_vars1' must be a list of your predictors
